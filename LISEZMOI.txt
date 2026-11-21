@@ -1,0 +1,17 @@
+SPATIAL 3D — obtenir le plug-in prêt à installer (sans Xcode, sans CMake, sans JUCE)
+
+Un plug-in macOS doit être compilé sur un Mac. Ce projet se compile tout seul
+sur les serveurs gratuits de GitHub, et tu télécharges le résultat.
+
+1. Crée un compte gratuit sur github.com, puis "New repository" (nom : Spatial3D, Public).
+2. Clique "uploading an existing file".
+3. Glisse-y TOUT le CONTENU du dossier Spatial3D (CMakeLists.txt, Source, Install, .github...).
+   (Dossier .github invisible ? Dans le Finder : Cmd + Maj + . pour afficher les fichiers cachés.)
+   Clique "Commit changes".
+4. Onglet "Actions" : la compilation démarre seule (≈ 10 min). Attends la coche verte.
+5. Clique sur le build > en bas "Artifacts" > télécharge "Spatial3D-macOS".
+6. Dézippe deux fois, double-clique "Installer.command" (clic droit > Ouvrir la 1re fois).
+7. Ouvre Logic Pro : Audio FX > Audio Units > TonNom > Spatial 3D.
+
+Si .github n'a pas été envoyé : "Add file > Create new file", nomme-le
+.github/workflows/build.yml et colle le contenu du fichier build.yml.
